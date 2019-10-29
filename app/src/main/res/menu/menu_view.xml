@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ViewActivity"
+    >
+
+    <item
+        android:id="@+id/edit_info"
+        android:title="edit"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_edit_24"
+        />
+
+
+</menu>

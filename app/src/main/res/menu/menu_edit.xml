@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditActivity">
+
+    <item
+        android:id="@+id/save_info"
+        android:title="Save Corper"
+        android:icon="@drawable/baseline_save_alt_24"
+        app:showAsAction="always" />
+
+</menu>

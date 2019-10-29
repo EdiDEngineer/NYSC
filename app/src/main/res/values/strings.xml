@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" >NYSC Corpers</string>
+    <string name="add_name">Add Corper</string>
+    <string name="edit_name">Edit Corper</string>
+    <string name="view_name">Corper </string>
+
+</resources>
