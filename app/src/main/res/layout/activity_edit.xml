@@ -17,7 +17,7 @@
             android:id="@+id/edit_pic"
             android:layout_width="match_parent"
             android:layout_height="104dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
             android:scaleType="fitXY"
             android:src="@mipmap/ic_launcher"
 
@@ -29,8 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:onClick="takePhoto"
             android:background="@drawable/baseline_add_a_photo_24"
+            android:onClick="takePhoto"
             android:src="?attr/selectableItemBackground" />
     </LinearLayout>
 
@@ -46,36 +46,35 @@
             android:layout_width="match_parent"
 
             android:layout_height="wrap_content"
-            android:hint="Name" />
+            android:hint="@string/name" />
 
         <EditText
             android:id="@+id/edit_call_up_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Call up Number" />
+            android:hint="@string/call_up_number" />
 
         <EditText
             android:id="@+id/edit_phone_no"
             android:layout_width="match_parent"
-
             android:layout_height="wrap_content"
-            android:hint="Phone Number"
-            android:inputType="number" />
+            android:hint="@string/phone_number"
+            android:inputType="number"
+            tools:ignore="TextFields" />
 
         <EditText
             android:id="@+id/edit_address"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Address" />
+            android:hint="@string/address" />
 
         <EditText
             android:id="@+id/edit_date_of_birth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:focusable="false"
-            android:hint="Date of Birth" />
+            android:focusable="true"
+            android:hint="@string/date_of_birth" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -86,15 +85,15 @@
                 android:id="@+id/edit_gender_male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:hint="Male" />
+                android:hint="@string/male"
+                android:onClick="onRadioButtonClicked" />
 
             <RadioButton
                 android:id="@+id/edit_gender_female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
-                android:hint="Female" />
+                android:hint="@string/female"
+                android:onClick="onRadioButtonClicked" />
         </RadioGroup>
     </LinearLayout>
 

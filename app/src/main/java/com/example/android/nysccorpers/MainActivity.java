@@ -119,6 +119,9 @@ public class MainActivity extends AppCompatActivity implements
                 NYSCCORPEREntry.COLUMN_NYSCCORPER_PIC
         };
 
+        View indicator = findViewById(R.id.loading_indicator);
+        indicator.setVisibility(View.VISIBLE);
+
         // This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,   // Parent activity context
                 NYSCCORPEREntry.CONTENT_URI,   // Provider content URI to query
@@ -132,8 +135,8 @@ public class MainActivity extends AppCompatActivity implements
     public void onLoadFinished(@NonNull Loader<Cursor> loader, Cursor data) {
         // Update {@link nyscCursorAdapter} with this new cursor containing updated nysc data
 
-        // View indicator = findViewById(R.id.loading_indicator);
-        //indicator.setVisibility(View.GONE);
+         View indicator = findViewById(R.id.loading_indicator);
+        indicator.setVisibility(View.GONE);
         corpersadapter.swapCursor(data);
     }
 

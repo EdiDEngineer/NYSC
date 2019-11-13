@@ -1,145 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    tools:context=".ViewActivity"
-
-    android:layout_height="wrap_content">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:orientation="vertical"
-
-    >
+    android:layout_height="wrap_content"
+    tools:context=".ViewActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
 
-        >
-
-        <ImageView
-            android:id="@+id/view_pic"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginRight="16dp"
-            />
-        <TextView
-            android:id="@+id/view_name"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Name"
-            android:gravity="center_vertical"
-            android:textAllCaps="true"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+                android:id="@+id/view_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/view_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="@string/name"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/call_up_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/ViewColorPrimary" />
+
+            <TextView
+                android:id="@+id/view_call_up_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/call_up_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/phone_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/ViewColorPrimary" />
+
+            <TextView
+                android:id="@+id/view_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/ViewColorPrimary" />
+
+            <TextView
+                android:id="@+id/view_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/date_of_birth"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/ViewColorPrimary" />
+
+            <TextView
+                android:id="@+id/view_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/date_of_birth"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/ViewColorPrimary" />
+
+            <TextView
+                android:id="@+id/view_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="vertical"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Call up Number"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@color/ViewColorPrimary"
-            />
-
-        <TextView
-            android:id="@+id/view_call_up_no"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Call up Number"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Phone Number"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@color/ViewColorPrimary"
-            />
-
-        <TextView
-            android:id="@+id/view_phone_no"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Phone Number"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Address"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@color/ViewColorPrimary"
-            />
-        <TextView
-            android:id="@+id/view_address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Address"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Date of Birth"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@color/ViewColorPrimary"
-            />
-        <TextView
-            android:id="@+id/view_date_of_birth"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Date of Birth"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gender"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:fontFamily="sans-serif-medium"
-            android:textColor="@color/ViewColorPrimary"
-            />
-        <TextView
-            android:id="@+id/view_gender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Gender"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-    </LinearLayout>
-
-
-
-
-</LinearLayout>
 </ScrollView>
